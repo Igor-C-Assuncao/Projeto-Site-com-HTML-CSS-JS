@@ -6,8 +6,8 @@ body {
 
 header {
     background-color: #333;
-    text-align:right;
-    padding: 20px; /* Adicione algum espaçamento superior e inferior ao header se necessário */
+    text-align: right;
+    padding: 20px;
 }
 
 nav ul {
@@ -15,15 +15,16 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 nav ul li {
-    margin-right: 15px; /* Espaçamento entre os botões */
+    margin-right: 15px;
+    transition: all 0.3s; /* Adicione uma transição para criar o efeito de sobreamento e aumento de tamanho */
 }
 
 nav ul li:last-child {
-    margin-right: 0; /* Remove o espaçamento do último botão */
+    margin-right: 0;
 }
 
 nav ul li a {
@@ -31,8 +32,10 @@ nav ul li a {
     color: #fff;
     padding: 10px 20px;
     border: 1px solid #fff;
+    display: inline-block; /* Adicione para controlar o aumento de tamanho */
 }
 
 nav ul li a:hover {
     background-color: #555;
+    transform: scale(1.05); /* Aumenta o tamanho do botão em 5% */
 }
