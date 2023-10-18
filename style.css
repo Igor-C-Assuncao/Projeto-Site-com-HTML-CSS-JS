@@ -2,60 +2,43 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-  }
-  
-  header {
+}
+
+header {
     background-color: #333;
-    text-align: right;
-    padding: 20px;
-  }
-  
-  nav ul {
+    text-align:left;
+    padding: 20px; /* Adicione algum espaçamento superior e inferior ao header se necessário */
+}
+
+.title{
+    color: #E64;
+}
+
+nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: flex-end;
-  }
-  
-  nav ul li {
-    margin-right: 15px;
-    transition: all 0.3s;
-  }
-  
-  nav ul li:last-child {
-    margin-right: 0;
-  }
-  
-  nav ul li a {
+    justify-content: right;
+}
+
+nav ul li {
+    margin-right: 15px; /* Espaçamento entre os botões */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove o espaçamento do último botão */
+}
+
+nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #F74;
     padding: 10px 20px;
-    border: 1px solid #fff;
-    display: inline-block;
-  }
-  
-  nav ul li a:hover {
-    background-color: #555;
-    transform: scale(1.05);
-  }
-  
-  .kits {
-    background-color: #fff;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-  }
-  
-  .kit {
-    text-align: center;
-  }
-  
-  .kit img {
-    max-width: 100%;
-  }
-  
-  .kit h2 {
-    margin-top: 10px;
-  }
-  
+    border: 0px solid #fff;
+}
+
+nav ul li a:hover {
+    background-color: #E64;
+    color: #fff;
+    border-radius: 20px;
+}
