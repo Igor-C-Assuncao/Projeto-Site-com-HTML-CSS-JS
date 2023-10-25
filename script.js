@@ -64,3 +64,5 @@ btAdicionar.onclick = async () => {
 };
 
 getTarefas();
+
+
