@@ -8,16 +8,28 @@ Parse.serverURL = "https://parseapi.back4app.com/";
 document.getElementById("loginButton").addEventListener("click", async () => {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-  
+    const login = Parse.Object.extend('Login');
+    const query = new Parse.Query(login);
+    
     try {
-       
-      const user = await Parse.Cloud.run("Login", { email, password });
 
-      console.log("Login efetuado com sucesso. Bem-vindo, " + user.get("username"));
+    const login = await query.find();
 
-    // Redirecione o usuário para a página principal da loja.
-    alert("Login efetuado com sucesso!");
+    for( const object of login){
+        const getPass = object.get('password')
+        const getmail = object.get('email')
+      
+      if(getPass == password && getmail == email ){
+        alert("Login efetuado com sucesso. Bem-vindo, " + object.get("Nome"));
+      
+    }else{
+    alert("Usuario ou senha incorreto");
+    }
+   
+  
+    }
+
     } catch (error) {
-      console.error("Erro de login: " + error.message);
+        console.error('Error while fetching records', error);
     }
   });
