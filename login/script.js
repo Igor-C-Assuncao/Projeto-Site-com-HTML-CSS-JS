@@ -10,8 +10,7 @@ document.getElementById("loginButton").addEventListener("click", async () => {
     const password = document.getElementById("password").value;
   
     try {
-        const results = await query.find();
-        for (const object of results) {
+       
       const user = await Parse.Cloud.run("Login", { email, password });
 
       console.log("Login efetuado com sucesso. Bem-vindo, " + user.get("username"));
