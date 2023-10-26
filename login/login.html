@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/style.css">
     <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
@@ -22,7 +20,7 @@
     <ul class="menulist">
       <li  class="menuitem"><a   style="text-decoration: none" class="link" href="/index.html">Home</a></li>
       <li class="menuitem"><a  style="text-decoration: none"  class="link" href="#">PRODUTOS</a></li>
-      <li class="menuitem"><a style="text-decoration: none" class="link" href="login/login.html">LOGIN</a></li>
+      <li class="menuitem"><a style="text-decoration: none" class="link" href="login.html">LOGIN</a></li>
     </ul>
   </nav>
 </section>
@@ -30,17 +28,16 @@
 </header>
 
 <form id="loginForm">
-  <h5>Faça o login no Roast at Fire</h5>
-  <input type="email" id="email" placeholder="Email">
-  <div class="password-toggle" id="togglePassword">
+    <h5>Faça o login no Roast at Fire</h5>
+    <input type="email" id="email" placeholder="Email">
     <input type="password" id="password" placeholder="Senha">
-    <i class="fa fa-eye" id="eye"></i>
-  </div>
-  <button type="button" id="loginButton">Login</button>
-</form>
-<script src="script.js" defer></script>
-
-
+    <button type="button" id="loginButton">Login</button>
+    <p>
+      Não tem uma conta?
+      <a class="signup" href="./signup.html">Cadastre-se</a>
+    </p>
+  </form>
+  <script src="script.js" defer></script>
 <body>
     
 </body>
