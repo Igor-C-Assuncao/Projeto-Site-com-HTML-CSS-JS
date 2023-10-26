@@ -18,6 +18,7 @@ document.getElementById("loginButton").addEventListener("click", async () => {
       
       if(getPass == password && getmail == email ){
         alert("Login efetuado com sucesso. Bem-vindo, " + object.get("Nome"));
+
       
     }else{
     alert("Usuario ou senha incorreto");
@@ -46,3 +47,17 @@ document.addEventListener('mouseup', () => {
     isShowingPassword = false;
   }
 });
+
+document.getElementById("cadastroButton").addEventListener("click",async () => {
+  const myNewObject = new Parse.Object('Login');
+  myNewObject.set('email', 'A string');
+  myNewObject.set('password', 'A string');
+  myNewObject.set('Nome', 'A string');
+  try {
+    const result = await myNewObject.save();
+    // Access the Parse Object attributes using the .GET method
+    console.log('Login created', result);
+  } catch (error) {
+    console.error('Error while creating Login: ', error);
+  }
+})();
