@@ -91,3 +91,10 @@ body {
   transform: translate(50px, 0);
 }
 }
+
+#btcompra {
+ font-size: 16px;
+ border-radius: 18px;
+ background-color: burlywood;
+ border: none;
+}
