@@ -55,28 +55,44 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
+<<<<<<< Updated upstream
 }
 
 #email,
 #password {
     width: 100%;
+=======
+  }
+  
+  #email,
+  #password {
+    width: 300px;
+>>>>>>> Stashed changes
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+<<<<<<< Updated upstream
 }
 
 #loginButton {
+=======
+  }
+  
+  #loginButton {
+    margin-top: 20px;
+>>>>>>> Stashed changes
     background-color: #E64;
     color: #fff;
     padding: 10px 20px;
     border: 0;
     border-radius: 5px;
     cursor: pointer;
-}
-
-#loginButton:hover {
+  }
+  
+  #loginButton:hover {
     background-color: #F74;
+<<<<<<< Updated upstream
 }
 */
 
@@ -135,3 +151,27 @@ input {
 .login-button:hover {
     background-color: #0056b3;
 }
+=======
+  }
+  
+  #togglePassword {
+    position: relative;
+  }
+  
+  #eye {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  #eye.hide-password::before {
+    content: "\f070"; /* Ícone do olho aberto (FontAwesome) */
+  }
+  
+  #eye.show-password::before {
+    content: "\f06e"; /* Ícone do olho fechado (FontAwesome) */
+  }
+  
+>>>>>>> Stashed changes
