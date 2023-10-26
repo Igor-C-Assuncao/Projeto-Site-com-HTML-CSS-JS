@@ -35,8 +35,6 @@ body {
   overflow: hidden;
   margin-bottom: 5rem;
   
-
-
   .logoWrapper {
     display: flex;
 
@@ -49,8 +47,6 @@ body {
       color: #ea4f4c;
     }
   }
-
-
 }
 
 .menuitem {

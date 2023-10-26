@@ -1,5 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+
+
+
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.navigationWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #222;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+  color: white;
+  text-transform: uppercase;
+  overflow: hidden;
+  margin-bottom: 5rem;
+  
+  .logoWrapper {
+    display: flex;
+
+    .stylish {
+      font-weight: bold;
+    }
+
+    .logo {
+      padding-left: 4px;
+      color: #ea4f4c;
+    }
+  }
+}
+
 /* Estilize o formulário de login */
-#loginForm {
+#loginForm, #cadastroForm  {
+    font-family: 'Rubik', sans-serif;
     background-color: #fff;
     max-width: 400px;
     margin: 0 auto;
@@ -7,18 +45,21 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-  }
-  
-  #email,
-  #password {
+}
+
+#email,
+#password,
+#sobrenome,
+#nome {
+    font-family: 'Rubik', sans-serif;
     width: 300px;
     padding: 10px;
     margin: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  #loginButton {
+}
+
+#loginButton, #cadastroButton {
     margin-top: 20px;
     background-color: #E64;
     color: #fff;
@@ -26,29 +67,14 @@
     border: 0;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  #loginButton:hover {
+}
+
+#loginButton:hover {
     background-color: #F74;
-  }
-  
-  #togglePassword {
-    position: relative;
-  }
-  
-  #eye {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-  
-  #eye.hide-password::before {
-    content: "\f070"; /* Ícone do olho aberto (FontAwesome) */
-  }
-  
-  #eye.show-password::before {
-    content: "\f06e"; /* Ícone do olho fechado (FontAwesome) */
-  }
-  
+}
+
+p {
+    font-family: 'Rubik', sans-serif;
+    margin-top: 20px;
+}
+
