@@ -1,14 +1,14 @@
-body {
+/*body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Adicione uma cor de fundo */
+    background-color: #f0f0f0;  Adicione uma cor de fundo 
 }
 
 header {
     background-color: #333;
     text-align: left;
-    padding: 20px; /* Adicione algum espaçamento superior e inferior ao header se necessário */
+    padding: 20px; /* Adicione algum espaçamento superior e inferior ao header se necessário 
 }
 
 .title {
@@ -24,11 +24,11 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 15px; /* Espaçamento entre os botões */
+    margin-right: 15px; /* Espaçamento entre os botões 
 }
 
 nav ul li:last-child {
-    margin-right: 0; /* Remove o espaçamento do último botão */
+    margin-right: 0; /* Remove o espaçamento do último botão 
 }
 
 nav ul li a {
@@ -36,9 +36,9 @@ nav ul li a {
     color: #F74;
     padding: 10px 20px;
     border: 0px solid #fff;
-    background-color: #333; /* Adicione uma cor de fundo aos botões */
+    background-color: #333; /* Adicione uma cor de fundo aos botões 
     border-radius: 20px;
-    transition: background-color 0.3s, color 0.3s; /* Adicione uma transição suave */
+    transition: background-color 0.3s, color 0.3s; /* Adicione uma transição suave 
 }
 
 nav ul li a:hover {
@@ -46,7 +46,7 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Estilize o formulário de login */
+/* Estilize o formulário de login 
 #loginForm {
     background-color: #fff;
     max-width: 400px;
@@ -77,4 +77,61 @@ nav ul li a:hover {
 
 #loginButton:hover {
     background-color: #F74;
+}
+*/
+
+/*-------------------------------*/
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #fff;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.login-form {
+    margin: 0 auto;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
 }
