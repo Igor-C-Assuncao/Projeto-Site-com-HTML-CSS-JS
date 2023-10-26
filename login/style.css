@@ -7,18 +7,18 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-}
-
-#email,
-#password {
+  }
+  
+  #email,
+  #password {
     width: 300px;
     padding: 10px;
     margin: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-#loginButton {
+  }
+  
+  #loginButton {
     margin-top: 20px;
     background-color: #E64;
     color: #fff;
@@ -26,8 +26,29 @@
     border: 0;
     border-radius: 5px;
     cursor: pointer;
-}
-
-#loginButton:hover {
+  }
+  
+  #loginButton:hover {
     background-color: #F74;
-}
+  }
+  
+  #togglePassword {
+    position: relative;
+  }
+  
+  #eye {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  #eye.hide-password::before {
+    content: "\f070"; /* Ícone do olho aberto (FontAwesome) */
+  }
+  
+  #eye.show-password::before {
+    content: "\f06e"; /* Ícone do olho fechado (FontAwesome) */
+  }
+  
