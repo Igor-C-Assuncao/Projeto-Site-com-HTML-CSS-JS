@@ -8,6 +8,7 @@ header {
     background-color: #333;
     text-align:left;
     padding: 20px; /* Adicione algum espaçamento superior e inferior ao header se necessário */
+    margin-bottom: 100px;
 }
 
 .title{
