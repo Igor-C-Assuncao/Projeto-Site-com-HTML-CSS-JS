@@ -1,45 +1,93 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #ea4f4c 0%, #6d0019 100%);
+
+  .signature {
+    font-style: italic;
+    font-size: 12px;
+    color: #212121;
+    padding-top: 15px;
+    transition: all 0.3s ease-in-out;
+    
+    &:hover {
+      color: white;
+    }
+  }
 }
 
-header {
-    background-color: #333;
-    text-align:left;
-    padding: 20px; /* Adicione algum espaçamento superior e inferior ao header se necessário */
-    margin-bottom: 100px;
-}
+.navigationWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #222;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+  color: white;
+  text-transform: uppercase;
+  overflow: hidden;
+  width: 750px;
 
-.title{
-    color: #E64;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  .logoWrapper {
     display: flex;
-    justify-content: right;
+
+    .stylish {
+      font-weight: bold;
+    }
+
+    .logo {
+      padding-left: 4px;
+      color: #ea4f4c;
+    }
+  }
+
+
 }
 
-nav ul li {
-    margin-right: 15px; /* Espaçamento entre os botões */
-}
+.menuitem {
+  background-color: none;
+  
+  }
+  .menuitem a {
+      display: block;
+      text-decoration: none;
+      color: #000;
+      padding: 10px;
+      }
+      .menulist {
+        display: flex;
+          list-style-type: none;
+          margin: 0px;
+          padding: 0px;
+          background-color: #EEE;
+          overflow: hidden;
+      }
 
-nav ul li:last-child {
-    margin-right: 0; /* Remove o espaçamento do último botão */
-}
+.active.parent {
+  transform: translate(-40px, -25px);
+  .link {
+    font-size: 12px;
 
-nav ul li a {
-    text-decoration: none;
-    color: #F74;
-    padding: 10px 20px;
-    border: 0px solid #fff;
-}
+    .fa-minus {
+      opacity: 1 !important;
+      font-size: 8px;
+    }
 
-nav ul li a:hover {
-    background-color: #E64;
-    color: #fff;
-    border-radius: 20px;
+    .fa-plus {
+      opacity: 0 !important;
+    }
+  }
+
+
+.invisible {
+  opacity: 0 !important;
+  transform: translate(50px, 0);
+}
 }
