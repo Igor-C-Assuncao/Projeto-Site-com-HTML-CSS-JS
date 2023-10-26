@@ -33,15 +33,16 @@ document.getElementById("loginButton").addEventListener("click", async () => {
 
   const passwordInput = document.getElementById('password');
 const eyeIcon = document.getElementById('eye');
+let isShowingPassword = false;
 
-eyeIcon.addEventListener('click', () => {
-  if (passwordInput.type === 'password') {
-    passwordInput.type = 'text';
-    eyeIcon.classList.remove('hide-password');
-    eyeIcon.classList.add('show-password');
-  } else {
+eyeIcon.addEventListener('mousedown', () => {
+  passwordInput.type = 'text';
+  isShowingPassword = true;
+});
+
+document.addEventListener('mouseup', () => {
+  if (isShowingPassword) {
     passwordInput.type = 'password';
-    eyeIcon.classList.remove('show-password');
-    eyeIcon.classList.add('hide-password');
+    isShowingPassword = false;
   }
 });
