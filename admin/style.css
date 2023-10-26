@@ -1,0 +1,36 @@
+/* Estilize o formulário de login */
+#loginForm {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  #nameKit,
+  #valueKit,
+  #imageKit {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #enviarKit {
+    margin-top: 20px;
+    background-color: #E64;
+    color: #fff;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #enviarKit:hover {
+    background-color: #F74;
+}
+  
+  
