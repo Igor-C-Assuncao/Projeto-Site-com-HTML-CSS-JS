@@ -16,19 +16,16 @@ document.getElementById("loginButton").addEventListener("click", async () => {
     for( const object of login){
         const getPass = object.get('password')
         const getmail = object.get('email')
-        const getadmin = object.get('admin')
       
       if(getPass == password && getmail == email ){
         alert("Login efetuado com sucesso. Bem-vindo, " + object.get("Nome"));
-      break;
-         
-    }else{
-    alert("Usuario ou senha incorreto");
-    break;
+    }
+    
+    
     }
    
   
-    }
+    
 
     } catch (error) {
         console.error('Error while fetching records', error);
