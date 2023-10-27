@@ -20,10 +20,11 @@ document.getElementById("loginButton").addEventListener("click", async () => {
       
       if(getPass == password && getmail == email ){
         alert("Login efetuado com sucesso. Bem-vindo, " + object.get("Nome"));
-      }else if (getadmin){
-          Window.location = "admin/admin.html"
+      break;
+         
     }else{
     alert("Usuario ou senha incorreto");
+    break;
     }
    
   
