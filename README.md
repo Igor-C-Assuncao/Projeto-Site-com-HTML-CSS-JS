@@ -7,7 +7,7 @@
 
 ### Este é o repositório do projeto de Programação Web e Mobile desenvolvido em grupo para a disciplina. O projeto consiste em um website para um Empório de Carnes Nobres, onde os clientes podem conhecer os produtos disponíveis, fazer pedidos e obter informações sobre a empresa.
 
-## Integrantes do Grupo
+## ☞ Integrantes do Grupo
 - [André Carvalho](https://github.com/andreltlc)
 - [Caio Guilherme](https://github.com/cacaiog)
 - [Danilo Barbosa](https://github.com/Dtssouza)
