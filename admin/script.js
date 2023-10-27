@@ -10,6 +10,7 @@ Parse.initialize(
     myNewObject.set('estoque',  document.getElementById("stoxkKit").value);
     myNewObject.set('descricao', document.getElementById("nameKit").value);   
     myNewObject.set('valor',document.getElementById("valueKit").value);
+    myNewObject.set('foto', new Parse.File("resume.jpg", { base64: btoa(document.getElementById("foto").value) }));
     try {
       const result = await myNewObject.save();
       // Access the Parse Object attributes using the .GET method
