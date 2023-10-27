@@ -1,16 +1,16 @@
-.row{
-    width: 100%;
-    
-}
-.col{
-    /* background-color: #ac6840;
-    border: 1px solid black; */
-    border-radius: 0.7rem;
-    margin: 1rem;
-    height: 20rem;
-    color: #fdf4f4;
-    
-}
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+  .col {
+    flex-basis: 30%;
+    text-align: center;
+    margin: 10px;
+  }
+
+
 .col>img{
     margin: 1.5rem;
     max-height: 12rem;
