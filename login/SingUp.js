@@ -7,6 +7,7 @@ Parse.initialize(
     myNewObject.set('email', document.getElementById("email").value);
     myNewObject.set('password', document.getElementById("password").value);
     myNewObject.set('Nome', document.getElementById("nome").value);
+    myNewObject.set('admin', false);
     try {
       const result = await myNewObject.save();
       // Access the Parse Object attributes using the .GET method
@@ -14,5 +15,5 @@ Parse.initialize(
     } catch (error) {
       console.error('Error while creating Login: ', error);
     }
-  });
+  })();
 
