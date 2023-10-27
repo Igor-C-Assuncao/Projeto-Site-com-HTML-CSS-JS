@@ -17,11 +17,11 @@
 
 <table>
   <tr>
-    <td>JavaScript</td>
-    <td>HTML</td>
-    <td>CSS</td>
-    <td>Bootstrap</td>
-    <td>API Back4App</td>
+    <td>$${\color{yellow}JavaScript}$$</td>
+    <td>$${\color{red}HTML}$$</td>
+    <td>$${\color{blue}CSS}$$</td>
+    <td>$${\color{purple}Bootstrap}$$</td>
+    <td>$${\color{cyan}API Back4App}$$</td>
     <td>Fontes do Google</td>  
   </tr>
 </table>
