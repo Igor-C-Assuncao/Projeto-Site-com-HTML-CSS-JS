@@ -7,9 +7,10 @@ Parse.initialize(
   document.getElementById("enviarKit").addEventListener("click", async () => {
     const myNewObject = new Parse.Object('Compras');
     myNewObject.set('codProduct', 1);
-    myNewObject.set('estoque', 1);
-    myNewObject.set('descricao', 'A string');
+    myNewObject.set('estoque',  document.getElementById("stoxkKit").value);
+    myNewObject.set('descricao', document.getElementById("nameKit").value);
     myNewObject.set('foto', new Parse.File("foto.jpg", { base64: btoa( document.getElementById("imageKit")) }));
+    myNewObject.set('valor',document.getElementById("valueKit").value );
     try {
       const result = await myNewObject.save();
       // Access the Parse Object attributes using the .GET method
