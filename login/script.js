@@ -12,18 +12,19 @@ document.getElementById("loginButton").addEventListener("click", async () => {
 
     const login = await query.find();
    
-  
-        const getPass = login.get('password')
-        const getmail = login.get('email')
-        const getadmin = login.get('admin')
+
+    for( const object of login){
+        const getPass = object.get('password')
+        const getmail = object.get('email')
+        const getadmin = object.get('admin')
       
       if(getPass == password && getmail == email ){
         alert("Login efetuado com sucesso. Bem-vindo, " + object.get("Nome"));
       }else if (getadmin){
           Window.location = "admin/admin.html"
-      }else{
-      alert("Usuario ou senha incorreto");
-      
+    }else{
+    alert("Usuario ou senha incorreto");
+    }
    
   
     }
@@ -33,7 +34,21 @@ document.getElementById("loginButton").addEventListener("click", async () => {
     }
   });
 
+  const passwordInput = document.getElementById('password');
+const eyeIcon = document.getElementById('eye');
+let isShowingPassword = false;
 
+eyeIcon.addEventListener('mousedown', () => {
+  passwordInput.type = 'text';
+  isShowingPassword = true;
+});
+
+document.addEventListener('mouseup', () => {
+  if (isShowingPassword) {
+    passwordInput.type = 'password';
+    isShowingPassword = false;
+  }
+});
 
 
 
