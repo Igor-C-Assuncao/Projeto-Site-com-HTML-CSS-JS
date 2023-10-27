@@ -9,7 +9,7 @@ Parse.initialize(
     myNewObject.set('codProduct', 1);
     myNewObject.set('estoque',  document.getElementById("stoxkKit").value);
     myNewObject.set('descricao', document.getElementById("nameKit").value);
-    myNewObject.set('foto', new Parse.File("foto.jpg", { base64: btoa( document.getElementById("imageKit")) }));
+    myNewObject.set('foto', new Parse.File("resume.txt", { base64: btoa("imageKit") }));
     myNewObject.set('valor',document.getElementById("valueKit").value );
     try {
       const result = await myNewObject.save();
