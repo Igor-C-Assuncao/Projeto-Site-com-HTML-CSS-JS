@@ -11,18 +11,19 @@ document.getElementById("loginButton").addEventListener("click", async () => {
     try {
 
     const login = await query.find();
-
-    for( const object of login){
-        const getPass = object.get('password')
-        const getmail = object.get('email')
+   
+  
+        const getPass = login.get('password')
+        const getmail = login.get('email')
+        const getadmin = login.get('admin')
       
       if(getPass == password && getmail == email ){
         alert("Login efetuado com sucesso. Bem-vindo, " + object.get("Nome"));
-
+      }else if (getadmin){
+          Window.location = "admin/admin.html"
+      }else{
+      alert("Usuario ou senha incorreto");
       
-    }else{
-    alert("Usuario ou senha incorreto");
-    }
    
   
     }
