@@ -16,18 +16,3 @@ Parse.initialize(
     }
   });
 
-  const passwordInput = document.getElementById('password');
-  const eyeIcon = document.getElementById('eye');
-  let isShowingPassword = false;
-  
-  eyeIcon.addEventListener('mousedown', () => {
-    passwordInput.type = 'text';
-    isShowingPassword = true;
-  });
-  
-  document.addEventListener('mouseup', () => {
-    if (isShowingPassword) {
-      passwordInput.type = 'password';
-      isShowingPassword = false;
-    }
-  });
