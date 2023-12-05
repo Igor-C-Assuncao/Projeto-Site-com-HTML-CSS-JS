@@ -9,8 +9,6 @@
 
 ## ☞ Integrantes do Grupo
 - [André Carvalho](https://github.com/andreltlc)
-- [Caio Guilherme](https://github.com/cacaiog)
-- [Danilo Barbosa](https://github.com/Dtssouza)
 - [Igor Cassimiro](https://github.com/Igor-C-Assuncao)
   
 ## ❇︎ Tecnologias Utilizadas
