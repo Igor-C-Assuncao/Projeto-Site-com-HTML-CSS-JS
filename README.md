@@ -47,4 +47,4 @@ Página inicial com informações sobre a empresa e destaques dos produtos.
 
 ## Imagem do prototipo
 
-<img src="https://github.com/Igor-C-Assuncao/Projeto-Site-com-HTML-CSS-JS/blob/main/img/Screenshot_20231205_021859_Roast%20on%20Fire%20-%20App%20-%20PWM.jpg)https://github.com/Igor-C-Assuncao/Projeto-Site-com-HTML-CSS-JS/blob/main/img/Screenshot_20231205_021859_Roast%20on%20Fire%20-%20App%20-%20PWM.jpg">
+<img src="https://github.com/Igor-C-Assuncao/Projeto-Site-com-HTML-CSS-JS/blob/main/img/Screenshot_20231205_021859_Roast%20on%20Fire%20-%20App%20-%20PWM.jpg">
