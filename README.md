@@ -43,3 +43,10 @@ Página inicial com informações sobre a empresa e destaques dos produtos.
 3. Abra o arquivo index.html no seu navegador para visualizar o website.
 
 
+## Diagrama de class 
+
+<img src="https://github.com/Igor-C-Assuncao/Projeto-Site-com-HTML-CSS-JS/blob/main/img/Aula12-Modelosdesoftware.png">
+
+## Imagem do prototipo
+
+<ims src="https://github.com/Igor-C-Assuncao/Projeto-Site-com-HTML-CSS-JS/blob/main/img/Screenshot_20231205_021859_Roast%20on%20Fire%20-%20App%20-%20PWM.jpghttps://github.com/Igor-C-Assuncao/Projeto-Site-com-HTML-CSS-JS/blob/main/img/Screenshot_20231205_021859_Roast%20on%20Fire%20-%20App%20-%20PWM.jpg">
