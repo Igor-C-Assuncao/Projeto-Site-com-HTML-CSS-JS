@@ -9,6 +9,8 @@
 
 ## ☞ Integrantes do Grupo
 - [André Carvalho](https://github.com/andreltlc)
+- [Caio Guilherme](https://github.com/cacaiog)
+- [Danilo Barbosa](https://github.com/Dtssouza)
 - [Igor Cassimiro](https://github.com/Igor-C-Assuncao)
   
 ## ❇︎ Tecnologias Utilizadas
@@ -39,7 +41,6 @@ Página inicial com informações sobre a empresa e destaques dos produtos.
 1. Clone este repositório em sua máquina local.
 2. Certifique-se de ter as dependências necessárias instaladas (Bootstrap ou outras.).
 3. Abra o arquivo index.html no seu navegador para visualizar o website.
-
 
 ## Diagrama de class 
 
